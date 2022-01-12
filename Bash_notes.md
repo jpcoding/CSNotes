@@ -10,3 +10,12 @@
 
 ## Parallel
 `youtube-dl --get-id "url" | xargs -I '{}' -P 10 youtube-dl  -o '%(title)s.%(ext)s'  'https://youtube.com/watch?v={}'`
+
+## File Archive 
+
+### Extract files from *.tar
+```tar xvf file.tar```
+
+### Extract files from *.tar.gz
+```tar xvxf file.tar.gz```
+
