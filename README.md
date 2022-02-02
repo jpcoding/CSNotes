@@ -1,2 +1,2 @@
 # LinuxCMDs
-Personal notes for Linux Commands 
+Just some notes
