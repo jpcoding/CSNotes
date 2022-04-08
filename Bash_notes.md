@@ -24,3 +24,7 @@
 ## Text 
 
 `grep "keyword" file | cut -d "deliminator" -f n(nth part to extract)`
+
+## resource monitor
+
+`watch -n.1 "grep \"^[c]pu MHz\" /proc/cpuinfo"`
