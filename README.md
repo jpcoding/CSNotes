@@ -1,2 +1,2 @@
-# LinuxCMDs
-Just some notes
+# Notes
+
