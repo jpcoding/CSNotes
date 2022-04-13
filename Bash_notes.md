@@ -7,7 +7,7 @@
 ### Test file write speed 
 `dd if=/dev/zero of=testfile bs=1024 count=1024000`
 
-### stderr and strout str  
+### stderr and stdout stdin 
 0: stdin, 1: stdout, 2:stderr
 
 Redirect stderr to a file `2> file `
