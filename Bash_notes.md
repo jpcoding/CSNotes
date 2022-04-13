@@ -7,6 +7,14 @@
 ### Test file write speed 
 `dd if=/dev/zero of=testfile bs=1024 count=1024000`
 
+### styderr and strout str  
+0: stdin, 1: stdout, 2:stderr
+
+Redirect stderr to a file `2> file `
+
+Redirect stderr to stdout `2>&1 `
+
+
 
 ## Parallel
 `youtube-dl --get-id "url" | xargs -I '{}' -P 10 youtube-dl  -o '%(title)s.%(ext)s'  'https://youtube.com/watch?v={}'`
