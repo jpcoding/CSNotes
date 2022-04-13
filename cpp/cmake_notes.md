@@ -3,7 +3,7 @@
 ### link to user shared library via pkgconfig 
 
 Sometimes cmake will use pkg_search_module to find shared library. 
-User witout root access cannot make change to `pkg-config`. A quick fix would be the follwing solutin.
+User without root access cannot make change to `pkg-config`. A quick fix would be the follwing solution.
 
 `set(ENV{PKG_CONFIG_PATH} "$ENV{PKG_CONFIG_PATH}:/path/to/user/lib/pkgconfig")`
 
