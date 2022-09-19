@@ -36,3 +36,8 @@ Redirect stderr to stdout `2>&1 `
 ## resource monitor
 
 `watch -n.1 "grep \"^[c]pu MHz\" /proc/cpuinfo"`
+
+## Storage fedora 
+
+`chcon -t fixed_disk_device_t /dev/mmcblk0` 
+
