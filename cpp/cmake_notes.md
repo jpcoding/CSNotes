@@ -15,7 +15,7 @@ This is used in MGARD.
 
 ### Always full RPATH in CMAKE
 
-Note: spack uses rpath and spack dose not reply on `LD_LIBRARY_PATH` for external libraries. 
+Note: spack uses rpath and spack dose not rely on `LD_LIBRARY_PATH` for external libraries. 
 
 ```message(STATUS "Using Rpath for installation")
 set(CMAKE_SKIP_BUILD_RPATH FALSE)
