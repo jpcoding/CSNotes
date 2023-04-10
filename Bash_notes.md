@@ -41,3 +41,14 @@ Redirect stderr to stdout `2>&1 `
 
 `chcon -t fixed_disk_device_t /dev/mmcblk0` 
 
+## Bashrc add dir to path
+
+```
+function addToPATH {
+  case ":$PATH:" in
+    *":$1:"*) :;; # already there
+    *) PATH="$1:$PATH";; # or PATH="$PATH:$1"
+  esac
+}
+```
+
