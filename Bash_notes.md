@@ -52,3 +52,12 @@ function addToPATH {
 }
 ```
 
+## numpy with mkl 
+
+```
+export MKLROOT=/opt/intel/mkl
+pip install numpy --no-binary numpy -vvv --global-option="build_ext" --global-option="-L$MKLROOT/lib/intel64" --global-option="-I$MKLROOT/include"
+import numpy as np
+print(np.__config__.show())
+```
+
