@@ -10,6 +10,7 @@ From: nvidia/nvidia/cuda:12.2.0-devel-ubi9
     dnf -y groupinstall "Development Tools"
     dnf -y install epel-release
     dnf -y update 
+    dnf -y curl --allowerasing 
     dnf -y install \
         gcc \
         gcc-c++ \
@@ -22,7 +23,7 @@ From: nvidia/nvidia/cuda:12.2.0-devel-ubi9
         python3-pip \
         btop \
         htop \
-        tmux
+        tmux \
     dnf clean all
     nvcc --version
 
