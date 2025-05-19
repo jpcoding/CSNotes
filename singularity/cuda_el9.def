@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: nvidia/nvidia/cuda:12.2.0-devel-ubi9
+From: nvidia/cuda:12.2.0-devel-ubi9
 
 %labels
     Maintainer Pu Jiao
