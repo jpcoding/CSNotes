@@ -23,6 +23,8 @@ From: nvidia/cuda:12.2.0-devel-rockylinux9
         python3-pip \
         epel-release \
         btop\
+        tmux\
+        
 
     # Clean up to reduce size
     dnf clean all
