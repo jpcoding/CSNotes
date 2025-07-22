@@ -13,3 +13,9 @@ Windows stock openssh does not support [ssh multiplexing](https://www.golinuxclo
 `.\wslssh.bat user@remote-machine`
 
 ## how to use wsl-ssh in vs code on windows? 
+
+In vscode settings, search "remote.SSH.path", and put the abslute path of `wslssh.bat` there. 
+
+When connecting to a remote session, the remote machine will talk with wsl instance for authentication instead of windows host. 
+
+
