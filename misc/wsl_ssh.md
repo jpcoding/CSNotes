@@ -4,9 +4,12 @@ Windows stock openssh does not support [ssh multiplexing](https://www.golinuxclo
 
 ## how to use wsl-ssh? 
 
-1. Create a .bat file with the following line
+1. Create a .bat file with the following line. Name it as wslssh.bat. 
+
 `C:\Windows\system32\wsl.exe bash -ic 'ssh %*'`
 
+2. Use wslssh.bat.
 
+`.\wslssh.bat user@remote-machine`
 
 ## how to use wsl-ssh in vs code on windows? 
