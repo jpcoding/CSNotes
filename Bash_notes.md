@@ -52,6 +52,10 @@ function addToPATH {
 }
 ```
 
+## Bash Parentheses, Brackets, and Braces
+
+'https://linuxconfig.org/bash-scripting-parenthesis-explained'
+
 ## numpy with mkl 
 
 ```
