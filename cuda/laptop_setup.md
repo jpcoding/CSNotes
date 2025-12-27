@@ -17,3 +17,9 @@ Add this to the root crontab (`sudo crontab -e`) to force the drivers to initial
     * *Why:* Essential for modern CUDA applications (PyTorch/TensorFlow) to manage memory pointers between CPU and GPU.
 * `-c=0`: Manually creates the device node for **Card 0**.
     * *Why:* Ensures the file `/dev/nvidia0` exists instantly so your code can find the hardware without needing a "wake up" event.
+
+Test with:
+
+```bash
+python3 -c "import torch; print(f'CUDA available: {torch.cuda.is_available()}'); print(f'Device: {torch.cuda.get_device_name(0)}')"
+```
