@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.20)
 project(cpp_training)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -13,6 +13,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
+
 add_subdirectory(${CMAKE_SOURCE_DIR}/test/posix)
 add_subdirectory(${CMAKE_SOURCE_DIR}/test/cuda)
 add_subdirectory(${CMAKE_SOURCE_DIR}/test/network)
+add_subdirectory(${CMAKE_SOURCE_DIR}/test/std)
+
