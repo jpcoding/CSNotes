@@ -7,11 +7,11 @@ set_target_properties(test_cpp23_span    PROPERTIES CXX_STANDARD 23 CXX_STANDARD
 find_program(CLANG_CXX clang++)
 
 if(CLANG_CXX)
-    add_custom_target(test_cpp26_mdspan ALL
+    add_custom_target(test_cpp23_mdspan ALL
         COMMAND ${CLANG_CXX} -std=c++23 -stdlib=libc++
-            ${CMAKE_CURRENT_SOURCE_DIR}/test_cpp26_mdspan.cpp
-            -o ${CMAKE_CURRENT_BINARY_DIR}/test_cpp26_mdspan
-        COMMENT "Building test_cpp26_mdspan with clang++ -stdlib=libc++"
+            ${CMAKE_CURRENT_SOURCE_DIR}/test_cpp23_mdspan.cpp
+            -o ${CMAKE_CURRENT_BINARY_DIR}/test_cpp23_mdspan
+        COMMENT "Building test_cpp23_mdspan with clang++ -stdlib=libc++"
     )
 else()
     message(STATUS "clang++ not found - skipping test_cpp26_mdspan")
