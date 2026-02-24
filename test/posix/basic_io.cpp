@@ -1,5 +1,6 @@
 #include "Utils/Timer.hpp"
-
+#include "CLI11/CLI11.hpp"
+#include <cstddef>
 #include <cstdio>
 #include <filesystem>
 #include <fstream>
@@ -123,10 +124,16 @@ double sum_file_cpp_style_bak(const char* filename)
 
 int main(int argc, char** argv)
 {
-    size_t buffer_size = atoi(argv[1]);
-    size_t file_size   = std::filesystem::file_size("test_1gb.dat");
+    CLI::App app{"App description"};
+    argv = app.ensure_utf8(argv);
+    std::string filename = "test_1gb.dat";
+    size_t buffer_size = 1024; 
+    app.add_option("-f,--file", filename, "A help string");
+    app.add_option("-s,--size", buffer_size, "buffer size"); 
+    CLI11_PARSE(app, argc, argv);
+    size_t file_size   = std::filesystem::file_size(filename.c_str());
     std::cout << "input file size " << file_size << std::endl;
-    sum_file_cpp_style("test_1gb.dat", file_size, buffer_size);
-    sum_file_c_style("test_1gb.dat", file_size, buffer_size);
+    sum_file_cpp_style(filename.c_str(), file_size, buffer_size);
+    sum_file_c_style(filename.c_str(), file_size, buffer_size);
     return 0;
 }
