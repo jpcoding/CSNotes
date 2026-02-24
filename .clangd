@@ -3,3 +3,25 @@ InlayHints:
   ParameterNames: No
   DeducedTypes: No
   Designators: No
+
+CompileFlags:
+  Add:
+    - -I/usr/local/cuda/targets/x86_64-linux/include
+    - -I/home/jp/git/cpp_traning/include
+  Remove:
+    - -forward-unknown-to-host-compiler
+    - --generate-code*
+    - --options-file
+    - CMakeFiles*
+    - -Xcompiler*
+    - --compiler-options*
+    - -rdc=*
+    - --cuda-gpu-arch*
+
+---
+If:
+  PathMatch: .*\.cu
+CompileFlags:
+  Add:
+    - -x
+    - c++
