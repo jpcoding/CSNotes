@@ -1,0 +1,564 @@
+{
+  "datasets": [
+    {
+      "dataset": "isotropic1024coarse",
+      "info_url": "https://turbulence.pha.jhu.edu/Forced_isotropic_turbulence.aspx",
+      "available_fields": {
+        "u": "velocity (3-component: ux, uy, uz)",
+        "p": "pressure (scalar)"
+      },
+      "extracted_params": {
+        "nodes": "10243"
+      },
+      "bullet_points": [
+        "C and Fortran",
+        "Matlab",
+        "Python",
+        ".Net",
+        "Direct numerical simulation (DNS) using 1,0243 nodes.",
+        "Navier-Stokes is solved using pseudo-spectral method.",
+        "Energy is injected by keeping constant the total energy in shells such that |k| is less or equal to 2.",
+        "After the simulation has reached a statistical stationary state, 5,028 frames of data with 3 velocity components and pressure are stored in the database. Extra time frames at the beginning and at the end have been added to be used for temporal-interpolations.",
+        "The Taylor-scale Reynolds number fluctuates around R ~ 433.",
+        "There is one dataset ( coarse ) with 5028 timesteps available, for time t between 0 and 10.056 (the frames are stored at every 10 time-steps of the DNS). Intermediate times can be queried using temporal-interpolation.",
+        "There is another dataset ( fine ) that stores every single time-step of the DNS, for testing purposes. Times available are for t between 0.0002 and 0.0198).",
+        "A table with the time history of the total kinetic energy and Taylor-scale Reynolds number as function of time can be downloaded from this text file.",
+        "Radial spectrum E(k) averaged over time can be downloaded from this text file."
+      ],
+      "notes": [
+        "TSTEP range: 1–5028"
+      ]
+    },
+    {
+      "dataset": "isotropic1024fine",
+      "info_url": "https://turbulence.pha.jhu.edu/Forced_isotropic_turbulence.aspx",
+      "available_fields": {
+        "u": "velocity (3-component: ux, uy, uz)",
+        "p": "pressure (scalar)"
+      },
+      "extracted_params": {
+        "nodes": "10243"
+      },
+      "bullet_points": [
+        "C and Fortran",
+        "Matlab",
+        "Python",
+        ".Net",
+        "Direct numerical simulation (DNS) using 1,0243 nodes.",
+        "Navier-Stokes is solved using pseudo-spectral method.",
+        "Energy is injected by keeping constant the total energy in shells such that |k| is less or equal to 2.",
+        "After the simulation has reached a statistical stationary state, 5,028 frames of data with 3 velocity components and pressure are stored in the database. Extra time frames at the beginning and at the end have been added to be used for temporal-interpolations.",
+        "The Taylor-scale Reynolds number fluctuates around R ~ 433.",
+        "There is one dataset ( coarse ) with 5028 timesteps available, for time t between 0 and 10.056 (the frames are stored at every 10 time-steps of the DNS). Intermediate times can be queried using temporal-interpolation.",
+        "There is another dataset ( fine ) that stores every single time-step of the DNS, for testing purposes. Times available are for t between 0.0002 and 0.0198).",
+        "A table with the time history of the total kinetic energy and Taylor-scale Reynolds number as function of time can be downloaded from this text file.",
+        "Radial spectrum E(k) averaged over time can be downloaded from this text file."
+      ],
+      "notes": [
+        "TSTEP range: 1–99 (fine time-step DNS frames)"
+      ]
+    },
+    {
+      "dataset": "mhd1024",
+      "info_url": "https://turbulence.pha.jhu.edu/Forced_MHD_turbulence.aspx",
+      "available_fields": {
+        "u": "velocity (3-component: ux, uy, uz)",
+        "p": "pressure (scalar)",
+        "b": "magnetic field (3-component: bx, by, bz)",
+        "a": "vector potential (3-component: ax, ay, az)"
+      },
+      "extracted_params": {
+        "nodes": "10243"
+      },
+      "bullet_points": [
+        "C and Fortran",
+        "Matlab",
+        "Python",
+        ".Net",
+        "Direct numerical simulation (DNS) using 1,0243 nodes.",
+        "Incompressible MHD equations are solved using pseudo-spectral method.",
+        "Energy is injected by using a Taylor-Green flow stirring force.",
+        "After the simulation has reached a statistical stationary state, 1,024 frames of data with 3 velocity components, pressure, 3 magnetic field and magnetic vector potential components are stored in the database.",
+        "The Taylor-scale Reynolds number fluctuates around R ~ 186.",
+        "1024 timesteps are available, for time t between 0 and 2.56 (the frames are stored at every 10 time-steps of the DNS). Intermediate times can be queried using temporal-interpolation.",
+        "A table with the spectra of the velocity, magnetic field, Elsasser variables, cross-helicity and magnetic helicity can be downloaded from this text file.",
+        "A table with the time histories of energy and dissipation, both kinetic and magnetic, as well as of magnetic and cross helicity, can be downloaded from this text file."
+      ],
+      "notes": [
+        "TSTEP range: 1–1024"
+      ]
+    },
+    {
+      "dataset": "channel",
+      "info_url": "https://turbulence.pha.jhu.edu/Channel_Flow.aspx",
+      "available_fields": {
+        "u": "velocity (3-component: ux, uy, uz)",
+        "p": "pressure (scalar)"
+      },
+      "extracted_params": {
+        "domain": "ofsize8πx2x3πusing2048x512x1536nodes.IncompressibleNavier-Stokesequationsaresolvedusingthepseudo-spectral(Fourier-Galerkin)methodinwall-parallel(xz)planesandthe7th-orderB-splinecollocationmethodinthewall-normal(y)direction.Simulationisrunandequilibratedusingprescribedbulkvelocity=1thenswitchedtoimposedpressuregradient(dP/dx=0.0025)andfurtherequilibrated.Afterthesimulationhasreacheda(nearly)statisticalstationarystate4000framesofdatawith3velocitycomponentsandpressurearestoredinthedatabase.Theframesarestoredatevery5time-stepsoftheDNS.Thiscorrespondstoaboutonechannelflow-throughtime.Intermediatetimescanbequeriedusingtemporal-interpolation.Thefrictionvelocityisu=0.0499.Theviscosityis=5x10-5.ThefrictionvelocityReynoldsnumberisRe~1000.They-locationsofthegridpointsintheverticaldirectioncanbedownloadedfromthistextfile;thecorrespondingB-splineknotlocationscanbeobtainedfromthistextfile.MoredetailsabouttheDNSareprovidedintheaccompanyingREADME-CHANNELdocument.AtablewiththetimehistoryoffrictionvelocityReynoldsnumbercanbedownloadedfromthistextfile.AtablewiththeverticalprofilesofmeanvelocityReynoldsshearstressesviscousstressnormalstressmeanpressurepressurevarianceandpressure-velocitycovarianceinviscousunitscanbedownloadedfromthistextfile.Fileswithtablesofthestreamwise(kx)spectraofuvwpatvariousheightscanbedownloadedforthefollowingy+values:10.1129.8999.75371.6and999.7.Fileswithtablesofthespanwise(kz)spectraofuvwpatvariousheightscanbedownloadedforthefollowingy+values:10.1129.8999.75371.6and999.7.",
+        "nodes": "1536"
+      },
+      "bullet_points": [
+        "C and Fortran",
+        "Matlab",
+        "Python",
+        ".Net",
+        "Direct numerical simulation (DNS) of channel flow in a domain of size 8π x 2 x 3π , using 2048 x 512 x 1536 nodes.",
+        "Incompressible Navier-Stokes equations are solved using the pseudo-spectral (Fourier-Galerkin) method in wall-parallel (x, z) planes, and the 7th-order B-spline collocation method in the wall-normal (y) direction.",
+        "Simulation is run and equilibrated using prescribed bulk velocity=1, then switched to imposed pressure gradient (dP/dx = 0.0025) and further equilibrated.",
+        "After the simulation has reached a (nearly) statistical stationary state, 4,000 frames of data with 3 velocity components and pressure are stored in the database. The frames are stored at every 5 time-steps of the DNS. This corresponds to about one channel flow-through time. Intermediate times can be queried using temporal-interpolation.",
+        "The friction velocity is u = 0.0499.",
+        "The viscosity is = 5 x 10-5.",
+        "The friction velocity Reynolds number is Re ~ 1000.",
+        "The y-locations of the grid points in the vertical direction can be downloaded from this text file; the corresponding B-spline knot locations can be obtained from this text file.",
+        "More details about the DNS are provided in the accompanying README-CHANNEL document.",
+        "A table with the time history of friction velocity Reynolds number can be downloaded from this text file.",
+        "A table with the vertical profiles of mean velocity, Reynolds shear stresses, viscous stress, normal stress, mean pressure, pressure variance and pressure-velocity covariance in viscous units, can be downloaded from this text file.",
+        "Files with tables of the streamwise (kx) spectra of u, v, w, p at various heights can be downloaded for the following y+ values: 10.11, 29.89, 99.75, 371.6, and 999.7.",
+        "Files with tables of the spanwise (kz) spectra of u, v, w, p at various heights can be downloaded for the following y+ values: 10.11, 29.89, 99.75, 371.6, and 999.7."
+      ],
+      "notes": [
+        "TSTEP range: 1–4000"
+      ]
+    },
+    {
+      "dataset": "mixing",
+      "info_url": "https://turbulence.pha.jhu.edu/Homogeneous_buoyancy_driven_turbulence.aspx",
+      "available_fields": {
+        "u": "velocity (3-component: ux, uy, uz)",
+        "p": "pressure (scalar)",
+        "d": "density (scalar)"
+      },
+      "extracted_params": {
+        "domain": "size2π×2π×2πusing10243nodes.Theincompressibletwo-fluidNavier-Stokesequationsaresolvedusingapseudo-spectralmethod.TheseequationsrepresentthelargespeedofsoundlimitforthefullycompressibleNavier-Stokesequationswithtwofluidshavingdifferentmolarmassesandobeyingtheideal-gasequationofstate.Thedomainistriplyperiodicandthehomogeneityofthefluctuatingquantitiesisensuredbyimposingmeanzerovelocityandconstantmeanpressuregradient.TheseconditionsaresimilartothoseencounteredintheinterioroftheRayleigh-Taylormixinglayer.Thetwofluidsareinitializedasrandomblobswithacharacteristicsizeofabout1/5ofthedomain.Theflowstartsfromrestinthepresenceofaconstantgravitationalaccelerationandthefluidsstartmovinginoppositedirectionduetodifferentialbuoyancyforces.Turbulencefluctuationsaregeneratedandtheturbulentkineticenergyincreases;howeverasthefluidsbecomemolecularlymixedthebuoyancyforcesdecreaseandatsomepointtheturbulencestartsdecaying.Duetothechangeinspecificvolumeduringmixingthedivergenceofvelocityisnotzerobutrelatedtothedensityfield.ThisleadstoavariablecoefficientPoissonequationforpressurewhichisdecomposedintwopartsforthegradientandcurlcomponentsofp/.Thesearesolvedusingdirectsolverstoensuremassconservationandbaroclinicgenerationofvorticitytomachineprecision.The1015timeframesstoredinthedatabasecoverboththebuoyancydrivenincreaseinturbulenceintensityaswellasthebuoyancymediatedturbulencedecay.Eachtimeframecontainsthedensity3velocitycomponentsandpressureatthegridpoints.Theframesarestoredataconstanttimeintervalof0.04whichrepresentsbetween20to50DNStimesteps.Schmidtnumber:1.0Froudenumber:1.0Atwoodnumber:0.05MaximumturbulentReynoldsnumber:Re~17765.MinimumturbulentReynoldsnumberduringdecayphase:Re~1595.AfilewiththetimehistoryoftheFavreturbulentkineticenergyk=ui''ui''2ReynoldsstressesRii=ui''ui''(nosummationoveri)verticalmassfluxav=u1'turbulentReynoldsnumberRet=k2eddyturnovertime=kkineticenergydissipationdensityvarianceanddensity-specificvolumecorrelationcanbefoundhere.(Note:UntilJuly222015thetime-historyfilethatwaspostedonthissiteincludedthetotalkineticenergyinsteadoftheFavreturbulentkineticenergy.ThefilepostedsinceJuly222015liststheFavreturbulentkineticenergy)Fileswithtablesofthepowerspectraofdensity3velocitycomponentsandmassfluxcanbedownloadedatthefollowingtimes:6.5611.415.020.030.0and40.0.FileswithtablesofthedensityPDFcanbedownloadedforthefollowingtimes:0.06.5611.415.020.030.0and40.0.",
+        "nodes": "10243"
+      },
+      "bullet_points": [
+        "C and Fortran",
+        "Matlab",
+        "Python",
+        ".Net",
+        "Direct Numerical Simulation (DNS) of homogeneous buoyancy driven turbulence in a domain size 2π × 2π × 2π, using 1,0243 nodes.",
+        "The incompressible two- fluid Navier-Stokes equations are solved using a pseudo-spectral method. These equations represent the large speed of sound limit for the fully compressible Navier-Stokes equations with two fluids having different molar masses and obeying the ideal-gas equation of state.",
+        "The domain is triply periodic and the homogeneity of the fluctuating quantities is ensured by imposing mean zero velocity and constant mean pressure gradient. These conditions are similar to those encountered in the interior of the Rayleigh-Taylor mixing layer.",
+        "The two fluids are initialized as random blobs, with a characteristic size of about 1/5 of the domain. The flow starts from rest, in the presence of a constant gravitational acceleration, and the fluids start moving in opposite direction due to differential buoyancy forces. Turbulence fluctuations are generated and the turbulent kinetic energy increases; however, as the fluids become molecularly mixed, the buoyancy forces decrease and at some point the turbulence starts decaying.",
+        "Due to the change in specific volume during mixing, the divergence of velocity is not zero, but related to the density field. This leads to a variable coefficient Poisson equation for pressure, which is decomposed in two parts, for the gradient and curl components of p/ . These are solved using direct solvers to ensure mass conservation and baroclinic generation of vorticity to machine precision.",
+        "The 1015 time frames stored in the database cover both the buoyancy driven increase inturbulence intensity as well as the buoyancy mediated turbulence decay. Each time frame contains the density, 3 velocity components, and pressure at the grid points. The frames are stored at a constant time interval of 0.04, which represents between 20 to 50 DNS time steps.",
+        "Schmidt number: 1.0",
+        "Froude number: 1.0",
+        "Atwood number: 0.05",
+        "Maximum turbulent Reynolds number: Re ~ 17,765.",
+        "Minimum turbulent Reynolds number during decay phase: Re ~ 1,595.",
+        "A file with the time history of the Favre turbulent kinetic energy, k = ui''ui'' 2 , Reynolds stresses, Rii = ui''ui'' (no summation over i), vertical mass flux, av = u1' , turbulent Reynolds number, Ret = k 2 , eddy turnover time, = k , kinetic energy dissipation, , density variance and density-specific volume correlation can be found here. (Note: Until July 22, 2015, the time-history file that was posted on this site included the total kinetic energy instead of the Favre turbulent kinetic energy. The file posted since July 22, 2015 lists the Favre turbulent kinetic energy)",
+        "Files with tables of the power spectra of density, 3 velocity components, and mass flux can be downloaded at the following times: 6.56, 11.4, 15.0, 20.0, 30.0, and 40.0.",
+        "Files with tables of the density PDF can be downloaded for the following times: 0.0, 6.56, 11.4, 15.0, 20.0, 30.0, and 40.0."
+      ],
+      "notes": []
+    },
+    {
+      "dataset": "isotropic4096",
+      "info_url": "https://turbulence.pha.jhu.edu/Isotropic4096.aspx",
+      "available_fields": {
+        "u": "velocity (3-component: ux, uy, uz)"
+      },
+      "extracted_params": {
+        "grid": "40963",
+        "domain": "2π×2π×2πGrid:40963Viscosityν=1.732×10-4Numberofsnapshotsavailable:1RMSvelocity:u'=(2k/3)1/2=1.56853ReynoldsnumberReλ=610.57Kolmogorovscaleη=1.3844×10-3L1/u'3=0.51GetPositionisnotimplementedforthisdataset.",
+        "num_snapshots": 1,
+        "viscosity": "1.732",
+        "Re_lambda": "610.57",
+        "nodes": "40963"
+      },
+      "bullet_points": [
+        "C and Fortran",
+        "Matlab",
+        "Python",
+        ".Net",
+        "Direct numerical simulation (DNS) using 40963 nodes.",
+        "Navier-Stokes is solved using pseudo-spectral method.",
+        "Time integration uses second-order Runge-Kutta.",
+        "The simulation is de-aliased using phase-shifting and truncation.",
+        "Energy is injected by keeping the energy density in the lowest wavenumber modes prescribed following the approach of Donzis & Yeung.",
+        "After the simulation has reached a statistical stationary state, a frame of data, which includes the 3 components of the velocity vector (but not the pressure for this dataset), are generated and written in files that can be accessed directly by the database (FileDB system)..",
+        "Domain: 2π × 2π × 2π",
+        "Grid: 40963",
+        "Viscosity ν = 1.732 × 10-4",
+        "Number of snapshots available: 1",
+        "RMS velocity: u' = (2k/3)1/2 = 1.56853",
+        "Reynolds number Reλ= 610.57",
+        "Kolmogorov scale η = 1.3844 × 10-3",
+        "L1/u'3 = 0.51",
+        "GetPosition is not implemented for this dataset."
+      ],
+      "notes": [
+        "TSTEP range: 1 only (single snapshot)",
+        "No pressure field available",
+        "GetPosition NOT supported"
+      ]
+    },
+    {
+      "dataset": "rotstrat4096",
+      "info_url": "https://turbulence.pha.jhu.edu/Rotstrat4096.aspx",
+      "available_fields": {
+        "u": "velocity (3-component: ux, uy, uz)",
+        "t": "temperature (scalar)"
+      },
+      "extracted_params": {
+        "grid": "40963",
+        "domain": "2π×2π×2πGrid:40963Numberofsnapshotsavailable:5Viscosityν=4×10-5PrandltnumberPr=ν/κ=1Brunt-VäisäläfrequencyN=13.2Inertialwavefrequencyf=2.67RMSvelocityU0=0.83ScaleofenergyspectrumpeakL0=2π/k0=2.5IntegrallengthscaleLint=2π∫EV(k)dk/∫kEV(k)dk=2.6FroudenumberFr=U0/L0N=0.0242RossbynumberRo=U0/L0f=0.12ReynoldsnumberRe=U0L0/ν=5.4x104KineticEnergyDissipationεV=0.0123PotentialEnergyDissipationεP=0.0077Kolmogorovscaleη=1.51515×10-3kmaxη=3.1GetPositionisnotimplementedforthisdataset.",
+        "num_snapshots": 5,
+        "viscosity": "4",
+        "nodes": "40963"
+      },
+      "bullet_points": [
+        "C and Fortran",
+        "Matlab",
+        "Python",
+        ".Net",
+        "Direct numerical simulation (DNS) of rotating and stratified turbulence using 40963 nodes, on a periodic grid using a pseudo-spectral parallel code, GHOST.",
+        "Navier-Stokes/Boussinesq equations are solved using a pseudo-spectral method.",
+        "Solid body rotation force acting as the only external forcing mechanism.",
+        "Time integration uses fourth-order Runge-Kutta.",
+        "After the simulation has reached a statistical stationary state, 5 frames of data, which includes the 3 components of the velocity vector and the temperature fluctuations, are generated and written in files that can be accessed directly by the database (FileDB system).",
+        "Domain: 2π × 2π × 2π",
+        "Grid: 40963",
+        "Number of snapshots available: 5",
+        "Viscosity ν = 4 × 10-5",
+        "Prandlt number Pr = ν/κ = 1",
+        "Brunt-Väisälä frequency N = 13.2",
+        "Inertial wave frequency f = 2.67",
+        "RMS velocity U0 = 0.83",
+        "Scale of energy spectrum peak L0 = 2π/k0 = 2.5",
+        "Integral length scale Lint = 2π ∫ EV(k)dk / ∫ kEV(k)dk = 2.6",
+        "Froude number Fr = U0/L0N = 0.0242",
+        "Rossby number Ro = U0/L0f = 0.12",
+        "Reynolds number Re = U0L0/ν = 5.4 x 104",
+        "Kinetic Energy Dissipation εV = 0.0123",
+        "Potential Energy Dissipation εP = 0.0077",
+        "Kolmogorov scale η = 1.51515 × 10-3",
+        "kmaxη = 3.1",
+        "GetPosition is not implemented for this dataset."
+      ],
+      "notes": [
+        "TSTEP range: 1–5",
+        "GetPosition NOT supported"
+      ]
+    },
+    {
+      "dataset": "transition_bl",
+      "info_url": "https://turbulence.pha.jhu.edu/Transition_bl.aspx",
+      "available_fields": {
+        "u": "velocity (3-component: ux, uy, uz)",
+        "p": "pressure (scalar)"
+      },
+      "extracted_params": {},
+      "bullet_points": [
+        "C and Fortran",
+        "Matlab",
+        "Python",
+        ".Net",
+        "Direct numerical simulation (DNS) of a transitional boundary layer over a plate with an elliptical leading edge.",
+        "Navier-Stokes was discretized on a curvilinear grid and solved using a finite volume DNS code.",
+        "A fractional-step algorithm was adopted, and the spatial discretization was a staggered volume-flux formulation.",
+        "The viscous terms were integrated in time implicitly using the Crank-Nicolson and the advections terms were treated explicitly using the Adams-Bashforth.",
+        "Pressure was treated using implicit Euler in the p-form. The pressure equation was Fourier transformed in the span, and the resulting Helmholtz equation was solved for every spanwise wavenumber using two-dimensional multi-grid.",
+        "After the simulation has reached a statistical stationary state, 4701 frames of data, which includes the 3 components of the velocity vector and the pressure, are generated and written in files that can be accessed directly by the database (FileDB system).",
+        "Since the grid is staggered, data at the wall are not stored in the database. However, JHTDB provides values in the region between the wall and the first grid point, y [0, 0.0036], using 4th-order Lagrange polynomial inter- and extrapolation.",
+        "The y-locations of the grid points in the vertical direction can be downloaded from this text file.",
+        "The time-averaged statistics can be downloaded from this HDF5 file. Brief notes are here."
+      ],
+      "notes": []
+    },
+    {
+      "dataset": "channel5200",
+      "info_url": "https://turbulence.pha.jhu.edu/Channel5200.aspx",
+      "available_fields": {
+        "u": "velocity (3-component: ux, uy, uz)",
+        "p": "pressure (scalar)"
+      },
+      "extracted_params": {
+        "domain": "ofsize8π×2×3πusing10240×1536×7680nodes.IncompressibleNavier-Stokesequationsaresolvedusingthepseudo-spectral(Fourier-Galerkin)methodinwall-parallel(xz)planesandthe7th-orderB-splinecollocationmethodinthewall-normal(y)direction.Simulationisrunandequilibratedusingprescribedbulkvelocity=1.Afterthesimulationhasreachedastatisticalstationarystate11framesofdatawith3velocitycomponentsandpressurearestoredinthedatabase.Theframesareapartfromeachotherfor0.7flow-throughtime.Thefrictionvelocityisu=0.0414872.Theviscosityis=8×10-6.ThefrictionvelocityReynoldsnumberisRe=5185.897.They-locationsofthegridpointsintheverticaldirectioncanbedownloadedfromthistextfile;thecorrespondingB-splineknotlocationscanbeobtainedfromthistextfile.MoredetailsabouttheDNSareprovidedintheaccompanyingREADME-CHANNELdocument.MeanprofilesofmeanvelocityReynoldsstressesvorticityvariancemeanpressurepressurevariancepressure-velocitycovariancetermsinReynoldsstresstransportequationand1Denergyspectracanbefoundhere.GetPositionandFilteringfunctionsarenotimplementedforthisdataset.",
+        "nodes": "7680"
+      },
+      "bullet_points": [
+        "C and Fortran",
+        "Matlab",
+        "Python",
+        ".Net",
+        "Direct numerical simulation (DNS) of channel flow in a domain of size 8π × 2 × 3π, using 10240 × 1536 × 7680 nodes.",
+        "Incompressible Navier-Stokes equations are solved using the pseudo-spectral (Fourier-Galerkin) method in wall-parallel (x, z) planes, and the 7th-order B-spline collocation method in the wall-normal (y) direction.",
+        "Simulation is run and equilibrated using prescribed bulk velocity=1.",
+        "After the simulation has reached a statistical stationary state, 11 frames of data with 3 velocity components and pressure are stored in the database. The frames are apart from each other for 0.7 flow-through time.",
+        "The friction velocity is u = 0.0414872.",
+        "The viscosity is = 8 × 10-6.",
+        "The friction velocity Reynolds number is Re = 5185.897.",
+        "The y-locations of the grid points in the vertical direction can be downloaded from this text file; the corresponding B-spline knot locations can be obtained from this text file.",
+        "More details about the DNS are provided in the accompanying README-CHANNEL document.",
+        "Mean profiles of mean velocity, Reynolds stresses, vorticity variance, mean pressure, pressure variance, pressure-velocity covariance, terms in Reynolds stress transport equation and 1D energy spectra, can be found here.",
+        "GetPosition and Filtering functions are not implemented for this dataset."
+      ],
+      "notes": [
+        "TSTEP range: 1–11",
+        "GetPosition NOT supported; Filtering NOT supported"
+      ]
+    },
+    {
+      "dataset": "isotropic8192",
+      "info_url": "https://turbulence.pha.jhu.edu/Isotropic8192.aspx",
+      "available_fields": {
+        "u": "velocity (3-component: ux, uy, uz)",
+        "p": "pressure (scalar)"
+      },
+      "extracted_params": {
+        "grid": "81923",
+        "domain": "2π×2π×2πGrid:81923Numberofsnapshotsavailable:6Taylor-scaleReynoldsnumberReλ~1200-1300forsnapshots0-4andReλ~610forsnapshot5ViscositydissipationRMSvelocityandKolmogorovscale:seeREADME-isotropic8192GetPositionisnotimplementedforthisdataset.",
+        "num_snapshots": 6,
+        "Re_lambda": "1200",
+        "nodes": "81923"
+      },
+      "bullet_points": [
+        "C and Fortran",
+        "Matlab",
+        "Python",
+        ".Net",
+        "Direct numerical simulation (DNS) using 81923 nodes.",
+        "Navier-Stokes is solved using pseudo-spectral method.",
+        "Time integration uses second-order Runge-Kutta.",
+        "The simulation is de-aliased using phase-shifting and truncation.",
+        "Energy is injected by keeping the energy density in the lowest wavenumber modes prescribed following the approach of Donzis & Yeung.",
+        "After the simulation has reached a statistical stationary state, a frame of data, which includes the 3 components of the velocity vector and the pressure, are generated and written in files that can be accessed directly by the database (FileDB system).",
+        "Domain: 2π × 2π × 2π",
+        "Grid: 81923",
+        "Number of snapshots available: 6",
+        "Taylor-scale Reynolds number Reλ ~ 1200-1300 for snapshots 0-4, and Reλ ~ 610 for snapshot 5",
+        "Viscosity, dissipation, RMS velocity, and Kolmogorov scale: see README-isotropic8192",
+        "GetPosition is not implemented for this dataset."
+      ],
+      "notes": [
+        "TSTEP range: 1–6",
+        "Re_lambda ~1200-1300 for TSTEP 1-5, ~610 for TSTEP 6",
+        "GetPosition NOT supported"
+      ]
+    }
+  ],
+  "api_operations": [
+    {
+      "name": "GetAnyCutoutWeb",
+      "description": "Retrieve the laplacian of the gradient of the specified field at a number of points for a given time. Development version, not intended for production use!"
+    },
+    {
+      "name": "GetBoxFilter",
+      "description": "GetBoxFilter of the specified field; uses workload density to decide how to evaluate."
+    },
+    {
+      "name": "GetBoxFilterGradient",
+      "description": "GetBoxFilter of the specified field; uses workload density to decide how to evaluate."
+    },
+    {
+      "name": "GetBoxFilterSGS",
+      "description": "Retrieve the SGS symmetric tensor for a single vector field. Also, used\n                            when two identical fields are specified (e.g. uu or bb)."
+    },
+    {
+      "name": "GetBoxFilterSGSscalar",
+      "description": "Retrieve the SGS scalar for a combination of two scalar fields(e.g. pp or pd)."
+    },
+    {
+      "name": "GetBoxFilterSGSsymtensor",
+      "description": "Retrieve the SGS symmetric tensor for a single vector field. Also, used\n                            when two identical fields are specified (e.g. uu or bb)."
+    },
+    {
+      "name": "GetBoxFilterSGStensor",
+      "description": "Retrieve the SGS tensor for a combination of two vector fields(e.g. ub or ba)."
+    },
+    {
+      "name": "GetBoxFilterSGSvector",
+      "description": "Retrieve the SGS vector for a combination of a vector and a scalar field(e.g. up or bp)."
+    },
+    {
+      "name": "GetData_Python",
+      "description": "Spatially interpolate the pressure at a number of points for a given time."
+    },
+    {
+      "name": "GetDensity",
+      "description": "Spatially interpolate the density field at a number of points for a given time."
+    },
+    {
+      "name": "GetDensityGradient",
+      "description": "Retrieve the density gradient at a fixed location"
+    },
+    {
+      "name": "GetDensityHessian",
+      "description": "Retrieve the density hessian at a fixed location"
+    },
+    {
+      "name": "GetFilter_Python",
+      "description": "Spatially interpolate the pressure at a number of points for a given time."
+    },
+    {
+      "name": "GetForce",
+      "description": "Retrieve the force for a number of points for a given time."
+    },
+    {
+      "name": "GetInvariant",
+      "description": "Retrieve the invariants of velocity gradient at a fixed location"
+    },
+    {
+      "name": "GetLaplacianOfGradient",
+      "description": "Retrieve the laplacian of the gradient of the specified field at a number of points for a given time. Development version, not intended for production use!"
+    },
+    {
+      "name": "GetMagneticField",
+      "description": "Spatially interpolate the magnetic field at a number of points for a given time."
+    },
+    {
+      "name": "GetMagneticFieldGradient",
+      "description": "Retrieve the magnetic field gradient at a number of points for a given time."
+    },
+    {
+      "name": "GetMagneticFieldLaplacian",
+      "description": "Retrieve the magnetic field Laplacian at a number of points for a given time."
+    },
+    {
+      "name": "GetMagneticHessian",
+      "description": "Retrieve the magnetic field hessian at a number of points for a given time."
+    },
+    {
+      "name": "GetPosition",
+      "description": "Fluid particle tracking using a task parallel evaluation approach inside the database engine."
+    },
+    {
+      "name": "GetPosition_Python",
+      "description": "Spatially interpolate the pressure at a number of points for a given time."
+    },
+    {
+      "name": "GetPressure",
+      "description": "Spatially interpolate the pressure field at a number of points for a given time."
+    },
+    {
+      "name": "GetPressureGradient",
+      "description": "Retrieve the pressure gradient at a fixed location"
+    },
+    {
+      "name": "GetPressureHessian",
+      "description": "Retrieve the pressure hessian at a fixed location"
+    },
+    {
+      "name": "GetRawDensity",
+      "description": "Get a cube of the raw density data with the given width cornered at the specified coordinates for the given time."
+    },
+    {
+      "name": "GetRawMagneticField",
+      "description": "Get a cube of the raw magnetic field data with the given width cornered at the specified coordinates for the given time."
+    },
+    {
+      "name": "GetRawPressure",
+      "description": "Get a cube of the raw pressure data with the given width cornered at the specified coordinates for the given time."
+    },
+    {
+      "name": "GetRawTemperature",
+      "description": "Get a cube of the raw density data with the given width cornered at the specified coordinates for the given time."
+    },
+    {
+      "name": "GetRawVectorPotential",
+      "description": "Get a cube of the raw vector potential data with the given width cornered at the specified coordinates for the given time."
+    },
+    {
+      "name": "GetRawVelocity",
+      "description": "Get a cube of the raw velocity data with the given width cornered at the specified coordinates for the given time."
+    },
+    {
+      "name": "GetTemperature",
+      "description": "Spatially interpolate the temperature field at a number of points for a given time."
+    },
+    {
+      "name": "GetTemperatureGradient",
+      "description": "Retrieve the temperature gradient at a fixed location"
+    },
+    {
+      "name": "GetTemperatureHessian",
+      "description": "Retrieve the temperature hessian at a fixed location"
+    },
+    {
+      "name": "GetThreshold",
+      "description": "GetThreshold of the specified field."
+    },
+    {
+      "name": "GetThreshold_Python",
+      "description": "Spatially interpolate the pressure at a number of points for a given time."
+    },
+    {
+      "name": "GetVectorPotential",
+      "description": "Spatially interpolate the magnetic field at a number of points for a given time."
+    },
+    {
+      "name": "GetVectorPotentialGradient",
+      "description": "Retrieve the vector potential gradient at a number of points for a given time."
+    },
+    {
+      "name": "GetVectorPotentialHessian",
+      "description": "Retrieve the vector potential hessian at a number of points for a given time."
+    },
+    {
+      "name": "GetVectorPotentialLaplacian",
+      "description": "Retrieve the vector potential Laplacian at a number of points for a given time."
+    },
+    {
+      "name": "GetVelocity",
+      "description": "Spatially interpolate the velocity at a number of points for a given time."
+    },
+    {
+      "name": "GetVelocityAndPressure",
+      "description": "Spatially interpolate the velocity and pressure for an array of points"
+    },
+    {
+      "name": "GetVelocityAndTemperature",
+      "description": "Spatially interpolate the velocity and temperature for an array of points"
+    },
+    {
+      "name": "GetVelocityBatch",
+      "description": "Spatially interpolate the velocity at a number of points for a given time (allow batching)."
+    },
+    {
+      "name": "GetVelocityGradient",
+      "description": "Retrieve the velocity gradient at a fixed location"
+    },
+    {
+      "name": "GetVelocityHessian",
+      "description": "Retrieve the velocity hessian at a fixed location"
+    },
+    {
+      "name": "GetVelocityLaplacian",
+      "description": "Retrieve the velocity laplacian at a fixed location"
+    },
+    {
+      "name": "NullOp",
+      "description": "Perform a null operation -- for testing throughput"
+    }
+  ],
+  "field_legend": {
+    "u": "velocity (3-component: ux, uy, uz)",
+    "p": "pressure (scalar)",
+    "b": "magnetic field (3-component: bx, by, bz)",
+    "a": "vector potential (3-component: ax, ay, az)",
+    "d": "density (scalar)",
+    "t": "temperature (scalar)"
+  },
+  "GetAnyCutoutWeb_parameters": {
+    "authToken": "Your API token string",
+    "dataset": "Dataset name string (see datasets list)",
+    "field": "Field code: u, p, b, a, d, t",
+    "T": "Timestep integer (TSTEP, range depends on dataset)",
+    "x_start": "Start X coordinate (1-based)",
+    "y_start": "Start Y coordinate (1-based)",
+    "z_start": "Start Z coordinate (1-based)",
+    "x_end": "End X coordinate (inclusive)",
+    "y_end": "End Y coordinate (inclusive)",
+    "z_end": "End Z coordinate (inclusive)",
+    "x_step": "Step size in X (1 = full resolution)",
+    "y_step": "Step size in Y",
+    "z_step": "Step size in Z",
+    "filter_width": "Filter width (1 = no filter)",
+    "addr": "Return address hint, use 'none'"
+  }
+}
